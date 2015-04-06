@@ -1,0 +1,23 @@
+{
+  "name": "node-server-setup-hapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "hapi": "^8.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexhoffman617/node-server-setup-hapi"
+  },
+  "author": "Alex Hoffman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexhoffman617/node-server-setup-hapi/issues"
+  },
+  "homepage": "https://github.com/alexhoffman617/node-server-setup-hapi"
+}
