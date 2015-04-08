@@ -1,6 +1,6 @@
-var Hapi = require('hapi');
+var hapi = require('hapi');
 
-var server = new Hapi.Server();
+var server = new hapi.Server();
 server.connection( { port: 3000, address: 'localhost'});
 
 var apiRoutes = [
@@ -8,7 +8,7 @@ var apiRoutes = [
         method: 'GET',
         path: '/',
         handler: function (request, reply) {
-            reply('Hello, world!');
+            reply('Hello World!');
         }
     }
 ];
@@ -16,7 +16,5 @@ var apiRoutes = [
 server.route(apiRoutes);
 
 server.start(function() {
-    console.log('Server started at: ' + server.info.uri);
-});/**
- * Created by alexhoffman on 4/6/15.
- */
+    console.log('Server started at http://localhost:' + server.info.port);
+});
